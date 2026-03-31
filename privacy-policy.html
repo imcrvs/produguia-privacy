@@ -1,15 +1,240 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Política de Privacidade - ProduGuia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade - ProduGuia - Gestor de guias</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #4f6c8c;
+      --accent-soft: #eaf1f8;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 16px;
+      --maxw: 860px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #f6f9fc 0%, #eef3f9 100%);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 20px;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #6c8fb5 100%);
+      color: white;
+      border-radius: 22px;
+      padding: 32px 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 16px;
+      opacity: 0.95;
+      max-width: 700px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 20px;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .highlight {
+      background: var(--accent-soft);
+      border: 1px solid #d7e4f2;
+      border-radius: 12px;
+      padding: 14px 16px;
+      color: var(--text);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 20px;
+      padding-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 24px 20px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Política de Privacidade</h1>
-  <p>O ProduGuia armazena localmente informações necessárias para o funcionamento da extensão, como categorias, URLs, títulos das abas e preferências do usuário.</p>
-  <p>Esses dados são armazenados usando o armazenamento local do Chrome e não são enviados para servidores externos.</p>
-  <p>A extensão não vende, compartilha ou transmite dados pessoais do usuário.</p>
-  <p>A extensão não utiliza código remoto, não injeta scripts em páginas e não coleta credenciais, histórico de navegação completo ou informações sensíveis.</p>
-  <p>Se esta política for alterada no futuro, esta página será atualizada.</p>
+  <main class="container">
+    <section class="hero">
+      <div class="badge">Política de Privacidade</div>
+      <h1>ProduGuia - Gestor de guias</h1>
+      <p>
+        Esta política explica de forma objetiva quais dados a extensão utiliza,
+        como eles são armazenados e o que não é feito com suas informações.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Resumo</h2>
+      <div class="highlight">
+        O ProduGuia armazena apenas os dados necessários para organizar
+        e reabrir abas no navegador. Esses dados ficam salvos localmente no Chrome
+        e não são enviados para servidores externos.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Quais dados a extensão utiliza</h2>
+      <p>A extensão pode armazenar localmente informações como:</p>
+      <ul>
+        <li>URLs das abas salvas</li>
+        <li>títulos das abas</li>
+        <li>favicons dos sites</li>
+        <li>nomes das categorias criadas pelo usuário</li>
+        <li>preferências de uso, como modo de abertura, ordenação e tema visual</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Como os dados são armazenados</h2>
+      <p>
+        Os dados são armazenados localmente usando os mecanismos de armazenamento
+        disponibilizados pelo navegador Chrome para extensões.
+      </p>
+      <p>
+        O objetivo desse armazenamento é permitir que o usuário salve, organize,
+        exporte, importe e reabra suas abas e categorias posteriormente.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>O que a extensão não faz</h2>
+      <ul>
+        <li>não envia seus dados para servidores externos</li>
+        <li>não vende, compartilha ou comercializa informações do usuário</li>
+        <li>não coleta senhas, dados bancários ou credenciais</li>
+        <li>não utiliza rastreamento para fins publicitários</li>
+        <li>não injeta scripts remotos em sites</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Permissões usadas</h2>
+      <p>
+        A extensão solicita apenas as permissões necessárias para seu funcionamento:
+      </p>
+      <ul>
+        <li><strong>tabs</strong>: para capturar, salvar e reabrir abas</li>
+        <li><strong>storage</strong>: para armazenar categorias, abas e preferências</li>
+        <li><strong>tabGroups</strong>: para abrir abas salvas como grupo de abas</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Controle do usuário</h2>
+      <p>
+        O usuário pode excluir categorias, remover abas salvas e substituir ou mesclar
+        backups importados diretamente pela interface da extensão.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Alterações nesta política</h2>
+      <p>
+        Esta política pode ser atualizada no futuro para refletir melhorias na extensão
+        ou mudanças nos requisitos de publicação. Quando isso acontecer, esta página será revisada.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contato</h2>
+      <p class="muted">
+        Tem alguma sugestão ou dúvida? Entre em contato pelo e-mail abaixo:
+      </p>
+      <p class="muted">
+        contato@demarcco.com.br
+      </p>
+    </section>
+
+    <div class="footer">
+      Última atualização: março de 2026
+    </div>
+  </main>
 </body>
 </html>
