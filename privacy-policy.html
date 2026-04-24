@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade - ProduGuia - Gestor de guias</title>
+  <title>Política de Privacidade - ProduGuia - Gestor de Guias</title>
   <style>
     :root {
       --bg: #f4f7fb;
@@ -18,9 +18,7 @@
       --maxw: 860px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -71,34 +69,21 @@
       margin-top: 0;
       margin-bottom: 12px;
       font-size: 20px;
-      color: var(--text);
     }
 
-    p {
-      margin: 0 0 14px;
-      color: var(--text);
-    }
+    p { margin: 0 0 14px; }
 
-    .muted {
-      color: var(--muted);
-    }
+    .muted { color: var(--muted); }
 
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
+    ul { margin: 0; padding-left: 20px; }
 
-    li {
-      margin-bottom: 10px;
-      color: var(--text);
-    }
+    li { margin-bottom: 10px; }
 
     .highlight {
       background: var(--accent-soft);
       border: 1px solid #d7e4f2;
       border-radius: 12px;
       padding: 14px 16px;
-      color: var(--text);
     }
 
     .footer {
@@ -113,128 +98,122 @@
       display: inline-block;
       background: rgba(255, 255, 255, 0.18);
       color: white;
-      border: 1px solid rgba(255, 255, 255, 0.22);
       border-radius: 999px;
       padding: 6px 10px;
       font-size: 13px;
       margin-bottom: 14px;
     }
-
-    a {
-      color: var(--accent);
-    }
-
-    @media (max-width: 640px) {
-      .hero {
-        padding: 24px 20px;
-      }
-
-      .hero h1 {
-        font-size: 26px;
-      }
-
-      .card {
-        padding: 20px;
-      }
-    }
   </style>
 </head>
 <body>
   <main class="container">
+
     <section class="hero">
       <div class="badge">Política de Privacidade</div>
-      <h1>ProduGuia - Gestor de guias</h1>
+      <h1>ProduGuia - Gestor de Guias</h1>
       <p>
-        Esta política explica de forma objetiva quais dados a extensão utiliza,
-        como eles são armazenados e o que não é feito com suas informações.
+        Esta política descreve quais dados são utilizados pela extensão,
+        como são armazenados e como são utilizados exclusivamente para o funcionamento do produto.
       </p>
     </section>
 
     <section class="card">
       <h2>Resumo</h2>
       <div class="highlight">
-        O ProduGuia armazena apenas os dados necessários para organizar
-        e reabrir abas no navegador. Esses dados ficam salvos localmente no Chrome
-        e não são enviados para servidores externos.
+        O ProduGuia armazena apenas dados necessários para organizar e restaurar abas.
+        Todas as informações permanecem localmente no navegador e não são enviadas para servidores externos.
       </div>
     </section>
 
     <section class="card">
-      <h2>Quais dados a extensão utiliza</h2>
-      <p>A extensão pode armazenar localmente informações como:</p>
+      <h2>Dados utilizados</h2>
+      <p>A extensão pode armazenar localmente:</p>
       <ul>
-        <li>URLs das abas salvas</li>
+        <li>URLs das abas salvas (histórico de navegação utilizado para funcionalidade)</li>
         <li>títulos das abas</li>
-        <li>favicons dos sites</li>
         <li>nomes das categorias criadas pelo usuário</li>
-        <li>preferências de uso, como modo de abertura, ordenação e tema visual</li>
+        <li>preferências de uso da extensão</li>
       </ul>
+      <p class="muted">
+        Os favicons são obtidos diretamente pelo navegador para exibição visual e não são armazenados separadamente.
+      </p>
     </section>
 
     <section class="card">
-      <h2>Como os dados são armazenados</h2>
+      <h2>Finalidade do uso dos dados</h2>
       <p>
-        Os dados são armazenados localmente usando os mecanismos de armazenamento
-        disponibilizados pelo navegador Chrome para extensões.
+        Os dados são utilizados exclusivamente para permitir:
+      </p>
+      <ul>
+        <li>salvar e organizar abas em categorias</li>
+        <li>restaurar sessões de navegação</li>
+        <li>exibir informações visuais das abas</li>
+      </ul>
+      <p>
+        Não há qualquer uso para análise, publicidade ou compartilhamento externo.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Armazenamento</h2>
+      <p>
+        Os dados são armazenados localmente utilizando a API de armazenamento do Chrome
+        (<code>chrome.storage.local</code>).
       </p>
       <p>
-        O objetivo desse armazenamento é permitir que o usuário salve, organize,
-        exporte, importe e reabra suas abas e categorias posteriormente.
+        Nenhuma informação é transmitida para servidores externos.
       </p>
     </section>
 
     <section class="card">
       <h2>O que a extensão não faz</h2>
       <ul>
-        <li>não envia seus dados para servidores externos</li>
-        <li>não vende, compartilha ou comercializa informações do usuário</li>
-        <li>não coleta senhas, dados bancários ou credenciais</li>
-        <li>não utiliza rastreamento para fins publicitários</li>
-        <li>não injeta scripts remotos em sites</li>
+        <li>não coleta dados pessoais sensíveis</li>
+        <li>não envia dados para servidores externos</li>
+        <li>não compartilha dados com terceiros</li>
+        <li>não realiza rastreamento ou analytics</li>
+        <li>não utiliza dados para publicidade</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Permissões usadas</h2>
-      <p>
-        A extensão solicita apenas as permissões necessárias para seu funcionamento:
-      </p>
+      <h2>Permissões utilizadas</h2>
       <ul>
-        <li><strong>tabs</strong>: para capturar, salvar e reabrir abas</li>
-        <li><strong>storage</strong>: para armazenar categorias, abas e preferências</li>
-        <li><strong>tabGroups</strong>: para abrir abas salvas como grupo de abas</li>
+        <li><strong>tabs</strong>: acesso às URLs e títulos das abas para salvamento e restauração</li>
+        <li><strong>storage</strong>: armazenamento local dos dados da extensão</li>
+        <li><strong>tabGroups</strong>: organização das abas em grupos ao restaurar sessões</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Controle do usuário</h2>
       <p>
-        O usuário pode excluir categorias, remover abas salvas e substituir ou mesclar
-        backups importados diretamente pela interface da extensão.
+        O usuário tem controle total sobre seus dados, podendo:
       </p>
+      <ul>
+        <li>excluir categorias e abas salvas</li>
+        <li>exportar dados para backup</li>
+        <li>importar ou substituir dados manualmente</li>
+      </ul>
     </section>
 
     <section class="card">
       <h2>Alterações nesta política</h2>
       <p>
-        Esta política pode ser atualizada no futuro para refletir melhorias na extensão
-        ou mudanças nos requisitos de publicação. Quando isso acontecer, esta página será revisada.
+        Esta política pode ser atualizada para refletir melhorias na extensão ou exigências da Chrome Web Store.
       </p>
     </section>
 
     <section class="card">
       <h2>Contato</h2>
-      <p class="muted">
-        Tem alguma sugestão ou dúvida? Entre em contato pelo e-mail abaixo:
-      </p>
-      <p class="muted">
-        contato@demarcco.com.br
-      </p>
+      <p class="muted">Dúvidas ou sugestões:</p>
+      <p class="muted">contato@demarcco.com.br</p>
     </section>
 
     <div class="footer">
-      Última atualização: março de 2026
+      Última atualização: abril de 2026
     </div>
+
   </main>
 </body>
 </html>
