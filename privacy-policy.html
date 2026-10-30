@@ -3,217 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade - ProduGuia - Gestor de Guias</title>
+  <title>Política de Privacidade | ProduGuia</title>
+  <meta name="description" content="Política de Privacidade da extensão ProduGuia 2.0 para Chrome: seus dados ficam no seu navegador, sem servidor, sem rastreamento e sem compartilhamento." />
   <style>
     :root {
-      --bg: #f4f7fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --accent: #4f6c8c;
-      --accent-soft: #eaf1f8;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      --radius: 16px;
-      --maxw: 860px;
+      --bg: #f7f1e8;
+      --card: #fffaf3;
+      --text: #2b2118;
+      --muted: #746556;
+      --border: #e4d6c6;
+      --accent-soft: #f0dfca;
+      --dark: #2d241c;
+      --shadow: 0 18px 45px rgba(61, 43, 29, 0.10);
+      --radius: 20px;
+      --maxw: 820px;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #f6f9fc 0%, #eef3f9 100%);
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(155, 106, 67, 0.12), transparent 32rem),
+        linear-gradient(180deg, #fbf6ef 0%, var(--bg) 100%);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.7;
       padding: 32px 20px;
     }
 
-    .container {
-      max-width: var(--maxw);
-      margin: 0 auto;
-    }
+    .container { max-width: var(--maxw); margin: 0 auto; }
 
     .hero {
-      background: linear-gradient(135deg, var(--accent) 0%, #6c8fb5 100%);
+      background: linear-gradient(135deg, var(--dark) 0%, #4c392a 100%);
       color: white;
-      border-radius: 22px;
-      padding: 32px 28px;
-      box-shadow: var(--shadow);
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-      line-height: 1.15;
-    }
-
-    .hero p {
-      margin: 0;
-      font-size: 16px;
-      opacity: 0.95;
-      max-width: 700px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
+      border-radius: 28px;
+      padding: 36px 32px;
       box-shadow: var(--shadow);
       margin-bottom: 16px;
     }
 
-    h2 {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 20px;
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
     }
 
-    p { margin: 0 0 14px; }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
 
-    .muted { color: var(--muted); }
+    .hero p { margin: 0; opacity: 0.9; }
 
+    .card {
+      background: rgba(255, 250, 243, 0.92);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+
+    h2 { margin: 0 0 10px; font-size: 20px; line-height: 1.3; letter-spacing: -0.02em; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
     ul { margin: 0; padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    li:last-child { margin-bottom: 0; }
+    ul + p { margin-top: 12px; }
 
-    li { margin-bottom: 10px; }
+    code {
+      background: var(--accent-soft);
+      border-radius: 8px;
+      padding: 2px 6px;
+      font-size: 0.92em;
+    }
 
     .highlight {
       background: var(--accent-soft);
-      border: 1px solid #d7e4f2;
-      border-radius: 12px;
-      padding: 14px 16px;
+      border: 1px solid #dfc8ad;
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: #4b3828;
+      font-weight: 600;
     }
+
+    .muted { color: var(--muted); }
 
     .footer {
       text-align: center;
       color: var(--muted);
       font-size: 14px;
       margin-top: 20px;
-      padding-bottom: 12px;
     }
 
-    .badge {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.18);
-      color: white;
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 13px;
-      margin-bottom: 14px;
+    @media (max-width: 640px) {
+      body { padding: 20px 14px; }
+      .hero { padding: 28px 22px; border-radius: 24px; }
+      .card { padding: 20px; }
     }
   </style>
+  <link rel="icon" href="icon32.png" sizes="32x32">
+  <link rel="icon" href="icon16.png" sizes="16x16">
 </head>
 <body>
   <main class="container">
-
     <section class="hero">
       <div class="badge">Política de Privacidade</div>
-      <h1>ProduGuia - Gestor de Guias</h1>
-      <p>
-        Esta política descreve quais dados são utilizados pela extensão,
-        como são armazenados e como são utilizados exclusivamente para o funcionamento do produto.
-      </p>
+      <h1>ProduGuia — Gestor de Guias</h1>
+      <p>Extensão para Google Chrome · Versão 2.0 · Atualizada em outubro de 2026</p>
     </section>
 
     <section class="card">
       <h2>Resumo</h2>
       <div class="highlight">
-        O ProduGuia armazena apenas dados necessários para organizar e restaurar abas.
-        Todas as informações permanecem localmente no navegador e não são enviadas para servidores externos.
+        O ProduGuia funciona inteiramente no seu navegador. Não tem servidor, não coleta dados pessoais,
+        não faz rastreamento e não vende nem compartilha nenhuma informação.
       </div>
     </section>
 
     <section class="card">
-      <h2>Dados utilizados</h2>
-      <p>A extensão pode armazenar localmente:</p>
+      <h2>Dados que ficam no seu navegador</h2>
       <ul>
-        <li>URLs das abas salvas (histórico de navegação utilizado para funcionalidade)</li>
-        <li>títulos das abas</li>
-        <li>nomes das categorias criadas pelo usuário</li>
-        <li>preferências de uso da extensão</li>
+        <li>Abas salvas em coleções (endereço e título), nomes, notas e cores das coleções.</li>
+        <li>Histórico das últimas 20 janelas fechadas, para poder reabri-las. Pode ser desativado.</li>
+        <li>Preferências da extensão.</li>
+        <li>Dados temporários, apagados ao fechar o navegador: itens para “Desfazer” (10 minutos) e o horário de uso das abas, se a suspensão de abas estiver ativada.</li>
       </ul>
       <p class="muted">
-        Os favicons são obtidos diretamente pelo navegador para exibição visual e não são armazenados separadamente.
+        Tudo fica em <code>chrome.storage</code>, no seu dispositivo, e é apagado ao desinstalar a extensão.
+        Os ícones dos sites vêm do cache do próprio Chrome.
       </p>
     </section>
 
     <section class="card">
-      <h2>Finalidade do uso dos dados</h2>
+      <h2>Conexões com a internet</h2>
       <p>
-        Os dados são utilizados exclusivamente para permitir:
+        Nenhum dado é enviado ao ProduGuia ou a terceiros. A extensão só acessa a internet quando você pede para
+        verificar links quebrados nos seus favoritos: cada endereço é consultado, sem cookies e sem login,
+        apenas para saber se a página ainda existe.
       </p>
+    </section>
+
+    <section class="card">
+      <h2>Permissões</h2>
       <ul>
-        <li>salvar e organizar abas em categorias</li>
-        <li>restaurar sessões de navegação</li>
-        <li>exibir informações visuais das abas</li>
-      </ul>
-      <p>
-        Não há qualquer uso para análise, publicidade ou compartilhamento externo.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Armazenamento</h2>
-      <p>
-        Os dados são armazenados localmente utilizando a API de armazenamento do Chrome
-        (<code>chrome.storage.local</code>).
-      </p>
-      <p>
-        Nenhuma informação é transmitida para servidores externos.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>O que a extensão não faz</h2>
-      <ul>
-        <li>não coleta dados pessoais sensíveis</li>
-        <li>não envia dados para servidores externos</li>
-        <li>não compartilha dados com terceiros</li>
-        <li>não realiza rastreamento ou analytics</li>
-        <li>não utiliza dados para publicidade</li>
+        <li><strong>tabs, tabGroups:</strong> salvar, contar, fechar e restaurar abas e grupos.</li>
+        <li><strong>storage:</strong> guardar coleções, preferências e histórico no dispositivo.</li>
+        <li><strong>alarms:</strong> verificar abas paradas, se a suspensão estiver ativada.</li>
+        <li><strong>favicon:</strong> mostrar ícones dos sites a partir do cache do Chrome.</li>
+        <li><strong>bookmarks</strong> (opcional) e <strong>acesso a sites</strong> (opcional): organizar os favoritos e verificar links. Pedidas só ao usar esses recursos e removíveis a qualquer momento.</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Permissões utilizadas</h2>
-      <ul>
-        <li><strong>tabs</strong>: acesso às URLs e títulos das abas para salvamento e restauração</li>
-        <li><strong>storage</strong>: armazenamento local dos dados da extensão</li>
-        <li><strong>tabGroups</strong>: organização das abas em grupos ao restaurar sessões</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Controle do usuário</h2>
+      <h2>Uso limitado</h2>
       <p>
-        O usuário tem controle total sobre seus dados, podendo:
-      </p>
-      <ul>
-        <li>excluir categorias e abas salvas</li>
-        <li>exportar dados para backup</li>
-        <li>importar ou substituir dados manualmente</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Alterações nesta política</h2>
-      <p>
-        Esta política pode ser atualizada para refletir melhorias na extensão ou exigências da Chrome Web Store.
+        Os dados servem apenas à finalidade da extensão: controlar o excesso de abas, recuperar janelas fechadas e
+        organizar favoritos. Não são usados para publicidade, análise de comportamento ou criação de perfil, e não
+        são transferidos a terceiros.
       </p>
     </section>
 
     <section class="card">
-      <h2>Contato</h2>
-      <p class="muted">Dúvidas ou sugestões:</p>
-      <p class="muted">contato@demarcco.com.br</p>
+      <h2>Seu controle</h2>
+      <p>
+        Você pode excluir coleções e sites, limpar ou desativar o histórico, exportar um backup, retirar as permissões
+        opcionais ou desinstalar a extensão, o que apaga todos os dados dela.
+      </p>
     </section>
 
-    <div class="footer">
-      Última atualização: abril de 2026
-    </div>
+    <section class="card">
+      <h2>Alterações e contato</h2>
+      <p>
+        Mudanças relevantes nesta política serão indicadas pela data no topo desta página.
+        Dúvidas: <strong>contato@produguia.com.br</strong>
+      </p>
+    </section>
 
+    <div class="footer">© 2026 ProduGuia — Gestor de Guias.</div>
   </main>
 </body>
 </html>
